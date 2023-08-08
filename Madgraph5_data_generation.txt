@@ -1,0 +1,12 @@
+set std_out level DEBUG
+import model "your UFO model file"
+generate e- e+ > j j j j QED<=99 QCD<=99
+output "/path/to/save/your/file/file_name"
+launch -i
+multi_run "enter the number of iteration you want"
+set ebeam1 "set the ev=nergy of electron beam"
+set ebeam2 "set the energy of positron beam"
+set nevents "set the number of events, try to keep less than equal to 1E+05"
+set polbeam1 "set the degree of polarization of electron beam: -100 to 100"
+set polbeam2 "set the degree of polarization of positron beam: -100 to 100"
+set "params" "value" "if you have any parameter to change to specific value"
